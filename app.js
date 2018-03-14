@@ -33,12 +33,12 @@ var app = new Vue({
               done: false
           })
           this.newTodo = ''
-          this.saveOrUpdateTodos()
+        //   this.saveOrUpdateTodos()
         },
         removeTodo: function (todo) {
             let index = this.todoList.indexOf(todo)
             this.todoList.splice(index,1)
-            this.saveOrUpdateTodos()
+            // this.saveOrUpdateTodos()
         },
         signUp: function () {
             let user = new AV.User();
@@ -137,6 +137,6 @@ var app = new Vue({
         // let oldDate = JSON.parse(oldDateString)
         // this.todoList = oldDate || []
         this.currentUser = this.getCurrentUser()
-        
+        this.fetchTodos()
     }
   })

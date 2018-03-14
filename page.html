@@ -148,6 +148,10 @@
       </ol>
     </section> -->
     <body>
+      <div class="todoHeader">
+        <span>{{currentUser.username}}</span>
+          <button v-on:click="logout">登出</button>
+      </div>
         <div class="wrapper">
           <div class="todolist-container">
             <header class="title">
@@ -163,8 +167,8 @@
                   <li class="todoSingle" v-for="todo in todoList">
                     <div>
                       <span class="missionDone" v-if="todo.done">已完成</span>
-                      <span class="missionDone" v-else="">未完成</span>
-                      <input type="checkbox" id="checkbox" v-model="todo.done">  标题：{{todo.title}} 
+                      <span class="missionOnProcess" v-else="">未完成</span>
+                      <input type="checkbox" id="checkbox" v-model="todo.done"  @change='saveOrUpdateTodos()'>{{todo.title}} 
                       <button class="todoButton" @click="removeTodo(todo)" >删除</button>
                     </div>
                     <div class="todoDate">
@@ -178,7 +182,7 @@
           <div class="input-bar">
             <input id="input-item" type="text" v-model="newTodo" @keyup.enter="addTodo" placeholder="enter a task...">
             <button class="input-button" id="addItem" @click="addTodo">add</button>
-            <button v-on:click="logout">登出</button>
+            
           </div>
           </div>
         </div>

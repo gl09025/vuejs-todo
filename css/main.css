@@ -1,46 +1,50 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
-  }
-  
-  html {
+}
+
+html {
     overflow-y: scroll;
-  }
-  
-  body {
+}
+
+body {
     background: #c1bdba;
     font-family: 'Titillium Web', sans-serif;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: #1ab188;
     transition: .5s ease;
-  }
-  a:hover {
-    color: #179b77;
-  }
-  
+}
 
-  .form {
+a:hover {
+    color: #179b77;
+}
+
+.form {
     background: rgba(19, 35, 47, 0.9);
     padding: 40px;
     max-width: 600px;
     margin: 40px auto;
     border-radius: 4px;
     box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-  }
-  
-  .tab-group {
+}
+
+.tab-group {
     list-style: none;
     padding: 0;
     margin: 0 0 40px 0;
-  }
-  .tab-group:after {
+}
+
+.tab-group:after {
     content: "";
     display: table;
     clear: both;
-  }
-  .tab-group li a {
+}
+
+.tab-group li a {
     display: block;
     text-decoration: none;
     padding: 15px;
@@ -52,28 +56,30 @@
     text-align: center;
     cursor: pointer;
     transition: .5s ease;
-  }
-  .tab-group li a:hover {
+}
+
+.tab-group li a:hover {
     background: #179b77;
     color: #ffffff;
-  }
-  .tab-group .active a {
+}
+
+.tab-group .active a {
     background: #1ab188;
     color: #ffffff;
-  }
-  
-  .tab-content > div:last-child {
+}
+
+.tab-content>div:last-child {
     display: none;
-  }
-  
-  h1 {
+}
+
+h1 {
     text-align: center;
     color: #ffffff;
     font-weight: 300;
     margin: 0 0 40px;
-  }
-  
-  label {
+}
+
+label {
     position: absolute;
     transform: translateY(6px);
     left: 13px;
@@ -82,26 +88,29 @@
     -webkit-backface-visibility: hidden;
     pointer-events: none;
     font-size: 22px;
-  }
-  label .req {
+}
+
+label .req {
     margin: 2px;
     color: #1ab188;
-  }
-  
-  label.active {
+}
+
+label.active {
     transform: translateY(50px);
     left: 2px;
     font-size: 14px;
-  }
-  label.active .req {
+}
+
+label.active .req {
     opacity: 0;
-  }
-  
-  label.highlight {
+}
+
+label.highlight {
     color: #ffffff;
-  }
-  
-  #signInAndSignup input, textarea {
+}
+
+#signInAndSignup input,
+textarea {
     font-size: 22px;
     display: block;
     width: 100%;
@@ -113,35 +122,37 @@
     color: #ffffff;
     border-radius: 0;
     transition: border-color .25s ease, box-shadow .25s ease;
-  }
-  #signInAndSignup input:focus, textarea:focus {
+}
+
+#signInAndSignup input:focus,
+textarea:focus {
     outline: 0;
     border-color: #1ab188;
-  }
-  
-  #signInAndSignup textarea {
+}
+
+#signInAndSignup textarea {
     border: 2px solid #a0b3b0;
     resize: vertical;
-  }
-  
-  .field-wrap {
+}
+
+.field-wrap {
     position: relative;
     margin-bottom: 40px;
-  }
-  
-  .top-row:after {
+}
+
+.top-row:after {
     content: "";
     display: table;
     clear: both;
-  }
-  .top-row > div {
+}
+
+.top-row>div {
     float: left;
     width: 100%;
     margin-right: 4%;
-  }
-  
-  
-  .button {
+}
+
+.button {
     border: 0;
     outline: none;
     border-radius: 0;
@@ -154,37 +165,39 @@
     color: #ffffff;
     transition: all 0.5s ease;
     -webkit-appearance: none;
-  }
-  .button:hover, .button:focus {
+}
+
+.button:hover,
+.button:focus {
     background: #179b77;
-  }
-  
-  .button-block {
+}
+
+.button-block {
     display: block;
     width: 100%;
-  }
-  
-  .forgot {
+}
+
+.forgot {
     margin-top: -20px;
     text-align: right;
-  }
-  
+}
 
-  /* todo部分 
+/* todo部分 
   
   
   
   
   */
-  
-  .wrapper {
+
+.wrapper {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 600px;
-  }
-  .wrapper .todolist-container {
+}
+
+.wrapper .todolist-container {
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
@@ -193,8 +206,9 @@
     justify-content: space-between;
     height: 80%;
     width: 80%;
-  }
-  .wrapper .title {
+}
+
+.wrapper .title {
     align-items: center;
     background-color: #1ab188;
     border-top-right-radius: 5px;
@@ -204,29 +218,34 @@
     justify-content: center;
     overflow: hidden;
     width: 100%;
-  }
-  .wrapper .content-area {
+}
+
+.wrapper .content-area {
     display: flex;
     flex-grow: 1;
     height: 100%;
     justify-content: stretch;
     padding: 30px;
-  }
-  .wrapper .content-area .todolist {
+}
+
+.wrapper .content-area .todolist {
     width: 100%;
-  }
-  .wrapper .content-area .todolist::after {
-      content: '';
-      display: block;
-      clear: both;
-  }
-  .wrapper .todolist li {
+}
+
+.wrapper .content-area .todolist::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wrapper .todolist li {
     border-bottom: 1px solid #dddddd;
     padding: 15px 0px;
     list-style: none;
-  }
-  .wrapper .content-area .todolist .todoButton {
-      float: right;
+}
+
+.wrapper .content-area .todolist .todoButton {
+    float: right;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -237,23 +256,24 @@
     color: #fff;
     background-color: #1ab188;
     border-color: #1ab188;
+}
 
-  }
-
-  .wrapper .content-area .todolist .todoSingle::after {
-      /* display:flex;
+.wrapper .content-area .todolist .todoSingle::after {
+    /* display:flex;
       justify-content: space-between;
       flex-wrap: nowrap; */
-      content: '';
-      display: block;
-      clear: both;
-  }
-  .wrapper .content-area .todolist .todoSingle .todoDate {
-      float: right;
-      margin-right: -42px;
-      padding-top: 26px;
-  }
-  .wrapper .content-area .todolist .todoSingle .missionDone {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wrapper .content-area .todolist .todoSingle .todoDate {
+    float: right;
+    margin-right: -42px;
+    padding-top: 26px;
+}
+
+.wrapper .content-area .todolist .todoSingle .missionDone {
     padding: 5px 10px;
     font-size: 12px;
     line-height: 1.5;
@@ -261,26 +281,39 @@
     color: #fff;
     background-color: #1ab188;
     border-color: #1ab188;
-  }
-  
-  .wrapper .comment-btn {
+}
+
+.wrapper .content-area .todolist .todoSingle .missionOnProcess {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #c51f80;
+    border-color: #c51f80;
+}
+
+.wrapper .comment-btn {
     display: flex;
     align-content: stretch;
     width: 10%;
     fill: #dddddd;
-  }
-  .wrapper .comment-btn:hover {
+}
+
+.wrapper .comment-btn:hover {
     fill: #dddddd;
     cursor: pointer;
-  }
-  .wrapper .input-bar {
+}
+
+.wrapper .input-bar {
     border-top: 1px solid #dddddd;
     display: flex;
     justify-content: center;
     padding: 20px;
     flex-grow: 1;
-  }
-  .wrapper .input-bar input {
+}
+
+.wrapper .input-bar input {
     border: 1px solid #1ab188;
     border-radius: 5px;
     border-top-right-radius: 0px;
@@ -293,8 +326,9 @@
     text-indent: 15px;
     width: 100%;
     color: #000;
-  }
-  .wrapper .input-button {
+}
+
+.wrapper .input-button {
     align-items: center;
     background-color: #1ab188;
     border: 1px solid #1ab188;
@@ -305,11 +339,29 @@
     display: flex;
     font-size: 16px;
     padding: 0px 40px;
-  }
-  .wrapper .input-button:hover {
+}
+
+.wrapper .input-button:hover {
     background-color: #dddddd;
     border: 1px solid #dddddd;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
-  }
-  
+}
+.todoHeader {
+    float: right;
+}
+.todoHeader button{
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #1ab188;
+    border-color: #1ab188;
+}
+
+.todoHeader::after {
+    content: '';
+    display: block;
+    clear: both;
+}
