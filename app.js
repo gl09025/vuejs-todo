@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import AV from 'leancloud-storage'
+import './css/main.css'
 
 var APP_ID = 'gLYSqvVS50LT7ShmcNvBtfqi-gzGzoHsz';
 var APP_KEY = '3hQfwe67K21FB4naNxajbknj';
@@ -33,12 +34,12 @@ var app = new Vue({
               done: false
           })
           this.newTodo = ''
-        //   this.saveOrUpdateTodos()
+          this.saveOrUpdateTodos()
         },
         removeTodo: function (todo) {
             let index = this.todoList.indexOf(todo)
             this.todoList.splice(index,1)
-            // this.saveOrUpdateTodos()
+            this.saveOrUpdateTodos()
         },
         signUp: function () {
             let user = new AV.User();

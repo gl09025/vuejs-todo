@@ -22,5 +22,9 @@
   "dependencies": {
     "leancloud-storage": "^3.6.0",
     "vue": "^2.5.15"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.10",
+    "style-loader": "^0.20.3"
   }
 }
