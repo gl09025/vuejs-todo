@@ -24,9 +24,12 @@ var app = new Vue({
     },
     methods: {
         addTodo: function (event) {
+            let date = new Date().toISOString()
+                .replace(/T/, ' ')     // replace T with a space
+                .replace(/\..+/, '')
           this.todoList.push({
               title: this.newTodo,
-              createdAt: new Date(),
+              createdAt: date,
               done: false
           })
           this.newTodo = ''
@@ -118,7 +121,10 @@ var app = new Vue({
                         console.error(error)
                     })
                 }
-        }
+        },
+        changeSignType:function () {
+            this.actionType == "signUp" ? this.actionType="login" : this.actionType="signUp";
+          }
     },
     created: function () {
         // window.onbeforeunload = () => {
